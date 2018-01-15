@@ -154,7 +154,7 @@ class TicketTriggerTest < ActiveSupport::TestCase
     ticket1 = Ticket.create!(
       title: "some <b>title</b>\n äöüß",
       group: Group.lookup(name: 'Users'),
-      customer: User.lookup(email: 'nicole.braun@zammad.org'),
+      customer: User.lookup(email: 'samuel@zionsoftwares.com'),
       updated_by_id: 1,
       created_by_id: 1,
     )
@@ -191,7 +191,7 @@ class TicketTriggerTest < ActiveSupport::TestCase
     assert_equal(%w[aa kk abc], ticket1.tag_list)
     article1 = ticket1.articles.last
     assert_match('Zammad <zammad@localhost>', article1.from)
-    assert_match('nicole.braun@zammad.org', article1.to)
+    assert_match('samuel@zionsoftwares.com', article1.to)
     assert_match('Thanks for your inquiry (some <b>title</b>  äöüß)!', article1.subject)
     assert_match('Braun<br>some &lt;b&gt;title&lt;/b&gt;', article1.body)
     assert_match('&gt; some message &lt;b&gt;note&lt;/b&gt;<br>&gt; new line', article1.body)
@@ -238,7 +238,7 @@ class TicketTriggerTest < ActiveSupport::TestCase
     ticket2 = Ticket.create!(
       title: "some title\n äöüß",
       group: Group.lookup(name: 'Users'),
-      customer: User.lookup(email: 'nicole.braun@zammad.org'),
+      customer: User.lookup(email: 'samuel@zionsoftwares.com'),
       state: Ticket::State.lookup(name: 'open'),
       priority: Ticket::Priority.lookup(name: '2 normal'),
       updated_by_id: 1,
@@ -265,7 +265,7 @@ class TicketTriggerTest < ActiveSupport::TestCase
     ticket3 = Ticket.create!(
       title: "some <b>title</b>\n äöüß3",
       group: Group.lookup(name: 'Users'),
-      customer: User.lookup(email: 'nicole.braun@zammad.org'),
+      customer: User.lookup(email: 'samuel@zionsoftwares.com'),
       updated_by_id: 1,
       created_by_id: 1,
     )
@@ -304,7 +304,7 @@ class TicketTriggerTest < ActiveSupport::TestCase
     assert_equal(%w[aa kk abc article_create_trigger], ticket3.tag_list)
     article3 = ticket3.articles[1]
     assert_match('Zammad <zammad@localhost>', article3.from)
-    assert_match('nicole.braun@zammad.org', article3.to)
+    assert_match('samuel@zionsoftwares.com', article3.to)
     assert_match('Thanks for your inquiry (some <b>title</b>  äöüß3)!', article3.subject)
     assert_match('Braun<br>some &lt;b&gt;title&lt;/b&gt;', article3.body)
     assert_match('&gt; some message note<br>&gt; new line', article3.body)
@@ -312,7 +312,7 @@ class TicketTriggerTest < ActiveSupport::TestCase
     assert_equal('text/html', article3.content_type)
     article3 = ticket3.articles[2]
     assert_match('Zammad <zammad@localhost>', article3.from)
-    assert_match('nicole.braun@zammad.org', article3.to)
+    assert_match('samuel@zionsoftwares.com', article3.to)
     assert_match('Thanks for your inquiry - 1234 check (some <b>title</b>  äöüß3)!', article3.subject)
     assert_equal('text/html', article3.content_type)
 
@@ -424,7 +424,7 @@ class TicketTriggerTest < ActiveSupport::TestCase
     ticket1 = Ticket.create!(
       title: "some title\n äöüß",
       group: Group.lookup(name: 'Users'),
-      customer: User.lookup(email: 'nicole.braun@zammad.org'),
+      customer: User.lookup(email: 'samuel@zionsoftwares.com'),
       updated_by_id: 1,
       created_by_id: 1,
     )
@@ -445,7 +445,7 @@ class TicketTriggerTest < ActiveSupport::TestCase
     assert_equal(1, ticket1.articles.count, 'ticket1.articles verify')
     article1 = ticket1.articles.last
     assert_match('Zammad <zammad@localhost>', article1.from)
-    assert_match('nicole.braun@zammad.org', article1.to)
+    assert_match('samuel@zionsoftwares.com', article1.to)
     assert_match('asdasdas', article1.subject)
     assert_match('dasdasdasd', article1.body)
     assert_equal('text/html', article1.content_type)
@@ -517,7 +517,7 @@ class TicketTriggerTest < ActiveSupport::TestCase
     ticket1 = Ticket.create!(
       title: "some title\n äöüß",
       group: Group.lookup(name: 'Users'),
-      customer: User.lookup(email: 'nicole.braun@zammad.org'),
+      customer: User.lookup(email: 'samuel@zionsoftwares.com'),
       updated_by_id: 1,
       created_by_id: 1,
     )
@@ -628,7 +628,7 @@ class TicketTriggerTest < ActiveSupport::TestCase
 <a href="#{config.http_type}://#{config.fqdn}/#ticket/zoom/#{ticket.id}">#{config.http_type}://#{config.fqdn}/#ticket/zoom/#{ticket.id}</a>
 </p>
 <br/>
-<p><i><a href="http://zammad.com">Zammad</a>, your customer support system</i></p>',
+<p><i><a href="http://zionsoftwares.com">Zionsoftwares</a>, your customer support system</i></p>',
           'recipient' => 'ticket_customer',
           'subject' => 'Thanks for your inquiry (#{ticket.title})',
         },
@@ -667,7 +667,7 @@ class TicketTriggerTest < ActiveSupport::TestCase
 <a href="#{config.http_type}://#{config.fqdn}/#ticket/zoom/#{ticket.id}">#{config.http_type}://#{config.fqdn}/#ticket/zoom/#{ticket.id}</a>
 </p>
 <br/>
-<p><i><a href="http://zammad.com">Zammad</a>, your customer support system</i></p>',
+<p><i><a href="http://zionsoftwares.com">Zionsoftwares</a>, your customer support system</i></p>',
           'recipient' => 'ticket_customer',
           'subject' => 'Thanks for your follow up (#{ticket.title})',
         },
@@ -908,7 +908,7 @@ class TicketTriggerTest < ActiveSupport::TestCase
 <a href="#{config.http_type}://#{config.fqdn}/#ticket/zoom/#{ticket.id}">#{config.http_type}://#{config.fqdn}/#ticket/zoom/#{ticket.id}</a>
 </p>
 <br/>
-<p><i><a href="http://zammad.com">Zammad</a>, your customer support system</i></p>',
+<p><i><a href="http://zionsoftwares.com">Zionsoftwares</a>, your customer support system</i></p>',
           'recipient' => 'ticket_customer',
           'subject' => 'Owner has changed (#{ticket.title})',
         },
@@ -973,7 +973,7 @@ class TicketTriggerTest < ActiveSupport::TestCase
 <a href="#{config.http_type}://#{config.fqdn}/#ticket/zoom/#{ticket.id}">#{config.http_type}://#{config.fqdn}/#ticket/zoom/#{ticket.id}</a>
 </p>
 <br/>
-<p><i><a href="http://zammad.com">Zammad</a>, your customer support system</i></p>',
+<p><i><a href="http://zionsoftwares.com">Zionsoftwares</a>, your customer support system</i></p>',
           'recipient' => 'ticket_customer',
           'subject' => 'Owner has changed (#{ticket.title})',
         },
@@ -1058,7 +1058,7 @@ class TicketTriggerTest < ActiveSupport::TestCase
 <a href="#{config.http_type}://#{config.fqdn}/#ticket/zoom/#{ticket.id}">#{config.http_type}://#{config.fqdn}/#ticket/zoom/#{ticket.id}</a>
 </p>
 <br/>
-<p><i><a href="http://zammad.com">Zammad</a>, your customer support system</i></p>',
+<p><i><a href="http://zionsoftwares.com">Zionsoftwares</a>, your customer support system</i></p>',
           'recipient' => 'ticket_customer',
           'subject' => 'Owner has changed (#{ticket.title})',
         },
@@ -1138,7 +1138,7 @@ class TicketTriggerTest < ActiveSupport::TestCase
 <a href="#{config.http_type}://#{config.fqdn}/#ticket/zoom/#{ticket.id}">#{config.http_type}://#{config.fqdn}/#ticket/zoom/#{ticket.id}</a>
 </p>
 <br/>
-<p><i><a href="http://zammad.com">Zammad</a>, your customer support system</i></p>',
+<p><i><a href="http://zionsoftwares.com">Zionsoftwares</a>, your customer support system</i></p>',
           'recipient' => 'ticket_customer',
           'subject' => 'Owner has changed (#{ticket.title})',
         },

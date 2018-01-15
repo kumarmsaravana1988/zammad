@@ -276,12 +276,12 @@ you
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <head>
   <body style="font-family:Geneva,Helvetica,Arial,sans-serif; font-size: 12px;">
-    <div>&gt; Welcome!</div><div>&gt;</div><div>&gt; Thank you for installing Zammad.</div><div>&gt;</div>
+    <div>&gt; Welcome!</div><div>&gt;</div><div>&gt; Thank you for installing Zionsoftwares Helpdesk.</div><div>&gt;</div>
   </body>
 </html>'
     should = '> Welcome!
 >
-> Thank you for installing Zammad.
+> Thank you for installing Zionsoftwares Helpdesk.
 >'
     assert_equal(should, html.html2text)
 

@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# zammad backup script functions
+# Zionsoftwares Helpdesk backup script functions
 #
 
 function get_zammad_dir () {
@@ -63,7 +63,7 @@ function check_database_config_exists () {
   if [ -f ${ZAMMAD_DIR}/config/database.yml ]; then
     get_db_credentials
   else
-    echo -e "${ZAMMAD_DIR}/config/database.yml is missing. is zammad configured yet? \nAborting..."
+    echo -e "${ZAMMAD_DIR}/config/database.yml is missing. is Zionsoftwares Helpdesk configured yet? \nAborting..."
     exit 1
   fi
 }
@@ -143,12 +143,12 @@ function detect_initcmd () {
 }
 
 function start_zammad () {
-  echo "# Starting Zammad"
+  echo "# Starting Zionsoftwares Helpdesk"
   ${INIT_CMD} start zammad
 }
 
 function stop_zammad () {
-  echo "# Stopping Zammad"
+  echo "# Stopping Zionsoftwares Helpdesk"
   ${INIT_CMD} stop zammad
 }
 
@@ -166,17 +166,17 @@ function restore_zammad () {
 }
 
 function start_backup_message () {
-    echo -e "\n# Zammad backup started - $(date)!\n"
+    echo -e "\n# Zionsoftwares Helpdesk backup started - $(date)!\n"
 }
 
 function start_restore_message () {
-    echo -e "\n# Zammad restored started - $(date)!\n"
+    echo -e "\n# Zionsoftwares Helpdesk restored started - $(date)!\n"
 }
 
 function finished_backup_message () {
-    echo -e "\n# Zammad backuped successfully - $(date)!\n"
+    echo -e "\n# Zionsoftwares Helpdesk backuped successfully - $(date)!\n"
 }
 
 function finished_restore_message () {
-    echo -e "\n# Zammad restored successfully - $(date)!\n"
+    echo -e "\n# Zionsoftwares Helpdesk restored successfully - $(date)!\n"
 }

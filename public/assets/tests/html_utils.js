@@ -33,8 +33,8 @@ test("textCleanup", function() {
   result = App.Utils.textCleanup(source)
   equal(result, should, source)
 
-  source = "> Welcome!\n> \n> Thank you for installing Zammad.\n> \n> You will find ..."
-  should = "> Welcome!\n>\n> Thank you for installing Zammad.\n>\n> You will find ..."
+  source = "> Welcome!\n> \n> Thank you for installing Zionsoftwares Helpdesk.\n> \n> You will find ..."
+  should = "> Welcome!\n>\n> Thank you for installing Zionsoftwares Helpdesk.\n>\n> You will find ..."
   result = App.Utils.textCleanup(source)
   equal(result, should, source)
 
@@ -58,8 +58,8 @@ test("text2html", function() {
   result = App.Utils.text2html(source)
   equal(result, should, source)
 
-  source = "> Welcome!\n> \n> Thank you for installing Zammad.\n> \n> You will find ..."
-  should = "<div>&gt; Welcome!</div><div>&gt;</div><div>&gt; Thank you for installing Zammad.</div><div>&gt;</div><div>&gt; You will find ...</div>"
+  source = "> Welcome!\n> \n> Thank you for installing Zionsoftwares Helpdesk.\n> \n> You will find ..."
+  should = "<div>&gt; Welcome!</div><div>&gt;</div><div>&gt; Thank you for installing Zionsoftwares Helpdesk.</div><div>&gt;</div><div>&gt; You will find ...</div>"
   result = App.Utils.text2html(source)
   equal(result, should, source)
 
@@ -129,8 +129,8 @@ test("html2text", function() {
   result = App.Utils.html2text(source)
   equal(result, should, source)
 
-  source = "<div>&gt; Welcome!</div><div>&gt;</div><div>&gt; Thank you for installing Zammad.</div><div>&gt;</div><div>&gt; You will find ...</div>"
-  should = "> Welcome!\n>\n> Thank you for installing Zammad.\n>\n> You will find ..."
+  source = "<div>&gt; Welcome!</div><div>&gt;</div><div>&gt; Thank you for installing Zionsoftwares Helpdesk.</div><div>&gt;</div><div>&gt; You will find ...</div>"
+  should = "> Welcome!\n>\n> Thank you for installing Zionsoftwares Helpdesk.\n>\n> You will find ..."
   result = App.Utils.html2text(source)
   equal(result, should, source)
 
@@ -736,13 +736,13 @@ test("quote", function() {
   result = App.Utils.quote(source)
   equal(result, should, source)
 
-  source = "Welcome!\n\nThank you for installing Zammad.\n\nYou will find ..."
-  should = "> Welcome!\n>\n> Thank you for installing Zammad.\n>\n> You will find ..."
+  source = "Welcome!\n\nThank you for installing Zionsoftwares Helpdesk.\n\nYou will find ..."
+  should = "> Welcome!\n>\n> Thank you for installing Zionsoftwares Helpdesk.\n>\n> You will find ..."
   result = App.Utils.quote(source)
   equal(result, should, source)
 
-  source = "Welcome! Thank you for installing Zammad. You will find ..."
-  should = "> Welcome! Thank you\n> for installing\n> Zammad. You will\n> find ..."
+  source = "Welcome! Thank you for installing Zionsoftwares Helpdesk. You will find ..."
+  should = "> Welcome! Thank you\n> for installing\n> Zionsoftwares Helpdesk. You will\n> find ..."
   result = App.Utils.quote(source, 20)
   equal(result, should, source)
 

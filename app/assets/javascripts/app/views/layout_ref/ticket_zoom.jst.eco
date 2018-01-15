@@ -68,9 +68,9 @@
           <div class="article-meta-clip top">
             <div class="article-content-meta top hide">
               <div class="article-meta top">
-                <div class="horizontal article-meta-row" title="From: Zammad Feedback <feedback@zammad.org>">
+                <div class="horizontal article-meta-row" title="From: Helpdesk Feedback <notifications@colcampus.com>">
                   <div class="article-meta-key u-textTruncate">From</div>
-                  <div class="article-meta-value flex u-textTruncate">Zammad Feedback &lt;feedback@zammad.org&gt;</div>
+                  <div class="article-meta-value flex u-textTruncate">Helpdesk Feedback &lt;notifications@colcampus.com&gt;</div>
                 </div>
               </div>
             </div>
@@ -84,14 +84,15 @@
                   <div class="article-text" id="article-1249870934">
   Welcome!
   <br/>
-  Thank you for installing Zammad.<br/>
+  Thank you for installing Zionsoftwares Helpdesk.<br/>
   <br/>
-  You will find updates and patches at <a href="https://zammad.org/" title="https://zammad.org/" target="_blank">https://zammad.org/</a>. Online<br/>
+  You will find updates and patches at <a href="http://zionsoftwares.com/" title="http://zionsoftwares.com/" target="_blank">http://zionsoftwares.com/</a>.<!-- Online<br/>
   documentation is available at <a href="https://zammad.org/documentation/" title="https://zammad.org/documentation/" target="_blank">https://zammad.org/documentation/</a>. Get involved<br/>
   (discussions, contributing, ...) at <a href="https://zammad.org/participate" title="https://zammad.org/participate" target="_blank">https://zammad.org/participate</a>.<br/>
+  -->
   <br/>
   Regards,<br/>
-  The <a href="https://zammad.org" title="https://zammad.org" target="_blank">zammad.org</a> Project
+  The <a href="http://zionsoftwares.com" title="http://zionsoftwares.com" target="_blank">zionsoftwares.com</a> Project
                   </div>
                   <div class="textBubble-overflowContainer">
                     <div class="btn btn--text js-unfold"><%- @T('See more') %></div>
@@ -174,9 +175,9 @@
           <div class="article-meta-clip top">
             <div class="article-content-meta top hide">
               <div class="article-meta top">
-                <div class="horizontal article-meta-row" title="From: Zammad Feedback <feedback@zammad.org>">
+                <div class="horizontal article-meta-row" title="From: Helpdesk Feedback <notifications@colcampus.com>">
                   <div class="article-meta-key u-textTruncate">From</div>
-                  <div class="article-meta-value flex u-textTruncate">Zammad Feedback &lt;feedback@zammad.org&gt;</div>
+                  <div class="article-meta-value flex u-textTruncate">Helpdesk Feedback &lt;notifications@colcampus.com&gt;</div>
                 </div>
               </div>
             </div>
@@ -549,11 +550,11 @@
         <div class="sidebar-block">
           <span class="avatar avatar--unique userInfo-avatar size-50 user-popover" data-id="2" style="background-position: -92.79607555375712px -106.24902447601627px;">NB</span>
           <h3 title="Name">
-            Nicole Braun
+            Samuel Santhosh
           </h3>
         </div>
         <div class="sidebar-block">
-          <label>Email</label> nicole.braun@zammad.org
+          <label>Email</label> samuel@zionsoftwares.com
         </div>
         <div class="sidebar-block">
           <label>Note</label>
@@ -588,7 +589,7 @@
             <a href="#organization/profile/1"></a>
           </div>
           <h3 title="Name">
-            Zammad Foundation
+            Zionsoftwares
           </h3>
         </div>
         <div class="sidebar-block">

@@ -121,12 +121,12 @@ module Import
         )
 
         if !response
-          raise "Can't connect to Zammad Migrator"
+          raise "Can't connect to Zionsoftwares Helpdesk Migrator"
         end
 
         if !response.success?
           log "ERROR: #{response.error}"
-          raise 'Zammad Migrator returned an error'
+          raise 'Zionsoftwares Helpdesk Migrator returned an error'
         end
         response
       end

@@ -67,7 +67,7 @@ class FirstStepsController < ApplicationController
               class: 'js-inviteAgent',
             },
             {
-              name: 'Invite customers to create issues in Zammad',
+              name: 'Invite customers to create issues in Zionsoftwares Helpdesk',
               checked: invite_customers,
               location: '#',
               class: 'js-inviteCustomer',
@@ -154,7 +154,7 @@ class FirstStepsController < ApplicationController
             class: 'js-testTicket',
           },
           {
-            name: 'Invite customers to create issues in Zammad',
+            name: 'Invite customers to create issues in Zionsoftwares Helpdesk',
             checked: invite_customers,
             location: '#',
             class: 'js-inviteCustomer',

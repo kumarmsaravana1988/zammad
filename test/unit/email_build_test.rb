@@ -37,7 +37,7 @@ class EmailBuildTest < ActiveSupport::TestCase
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   </head>
   <body style="font-family:Geneva,Helvetica,Arial,sans-serif; font-size: 12px;">
-    <div>&gt; Welcome!</div><div>&gt;</div><div>&gt; Thank you for installing Zammad. äöüß</div><div>&gt;</div>
+    <div>&gt; Welcome!</div><div>&gt;</div><div>&gt; Thank you for installing Zionsoftwares Helpdesk. äöüß</div><div>&gt;</div>
   </body>
 </html>'
     mail = Channel::EmailBuild.build(
@@ -56,7 +56,7 @@ class EmailBuildTest < ActiveSupport::TestCase
 
     should = '> Welcome!
 >
-> Thank you for installing Zammad. äöüß
+> Thank you for installing Zionsoftwares Helpdesk. äöüß
 >'
     assert_equal(should, mail.text_part.body.to_s)
     assert_equal(html, mail.html_part.body.to_s)
@@ -65,7 +65,7 @@ class EmailBuildTest < ActiveSupport::TestCase
     data = parser.parse(mail.to_s)
 
     # check body
-    should = '<div>&gt; Welcome!</div><div>&gt;</div><div>&gt; Thank you for installing Zammad. äöüß</div><div>&gt;</div>'
+    should = '<div>&gt; Welcome!</div><div>&gt;</div><div>&gt; Thank you for installing Zionsoftwares Helpdesk. äöüß</div><div>&gt;</div>'
     assert_equal(should, data[:body])
     assert_equal('text/html', data[:content_type])
 
@@ -93,7 +93,7 @@ class EmailBuildTest < ActiveSupport::TestCase
   test 'plain email + attachment check' do
     text = '> Welcome!
 >
-> Thank you for installing Zammad. äöüß
+> Thank you for installing Zionsoftwares Helpdesk. äöüß
 >'
     mail = Channel::EmailBuild.build(
       from: 'sender@example.com',
@@ -110,7 +110,7 @@ class EmailBuildTest < ActiveSupport::TestCase
 
     should = '> Welcome!
 >
-> Thank you for installing Zammad. äöüß
+> Thank you for installing Zionsoftwares Helpdesk. äöüß
 >'
     assert_equal(should, mail.text_part.body.to_s)
     assert_nil(mail.html_part)
@@ -140,7 +140,7 @@ class EmailBuildTest < ActiveSupport::TestCase
   test 'plain email + without attachment check' do
     text = '> Welcome!
 >
-> Thank you for installing Zammad. äöüß
+> Thank you for installing Zionsoftwares Helpdesk. äöüß
 >'
     mail = Channel::EmailBuild.build(
       from: 'sender@example.com',
@@ -150,7 +150,7 @@ class EmailBuildTest < ActiveSupport::TestCase
 
     should = '> Welcome!
 >
-> Thank you for installing Zammad. äöüß
+> Thank you for installing Zionsoftwares Helpdesk. äöüß
 >'
     assert_equal(should, mail.body.to_s)
     assert_nil(mail.html_part)

@@ -110,17 +110,17 @@ function create_initscripts () {
   echo "# (Re)creating init scripts"
   zammad scale web=${ZAMMAD_WEBS} websocket=${ZAMMAD_WEBSOCKETS} worker=${ZAMMAD_WORKERS}
 
-  echo "# Enabling Zammad on boot"
+  echo "# Enabling Zionsoftwares Helpdesk on boot"
   ${INIT_CMD} enable zammad
 }
 
 function start_zammad () {
-  echo "# Starting Zammad"
+  echo "# Starting Zionsoftwares Helpdesk"
   ${INIT_CMD} start zammad
 }
 
 function stop_zammad () {
-  echo "# Stopping Zammad"
+  echo "# Stopping Zionsoftwares Helpdesk"
   ${INIT_CMD} stop zammad
 }
 
@@ -262,10 +262,10 @@ function update_or_install () {
     create_database_password
 
     if [ "${ADAPTER}" == "postgresql" ]; then
-      echo "# Installing zammad on postgresql"
+      echo "# Installing Zionsoftwares Helpdesk on postgresql"
       create_postgresql_db
     elif [ "${ADAPTER}" == "mysql2" ]; then
-      echo "# Installing zammad on mysql"
+      echo "# Installing Zionsoftwares Helpdesk on mysql"
       create_mysql_db
     fi
 
@@ -289,7 +289,7 @@ function final_message () {
   echo -e "\nAdd your fully qualified domain name or public IP to servername directive of"
   echo -e "${WEBSERVER}, if this installation is done on a remote server. You have to change:"
   echo -e "${WEBSERVER_CONF} and restart ${WEBSERVER_CMD} process."
-  echo -e "Otherwise just open http://localhost/ in your browser to start using Zammad.\n"
+  echo -e "Otherwise just open http://localhost/ in your browser to start using Zionsoftwares Helpdesk.\n"
   if [ "${OS}" == "REDHAT" ]; then
     echo -e "\n Remember to enable selinux and firewall rules!\n"
     echo -e "Use the following commands:"

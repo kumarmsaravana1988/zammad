@@ -155,6 +155,15 @@ group :development, :test do
 
   # mock http calls
   gem 'webmock'
+
+  group :deploy do
+    gem 'capistrano'
+    gem 'capistrano-bundler'
+    gem 'capistrano-rails'
+    gem 'capistrano-passenger'
+    gem 'capistrano3-delayed-job'
+  end
+
 end
 
 # load onw gems for development and testing purposes

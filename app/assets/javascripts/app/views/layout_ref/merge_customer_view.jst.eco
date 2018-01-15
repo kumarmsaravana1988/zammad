@@ -62,7 +62,7 @@
                   </div>
 
                   <div class="article-meta-value flex contain-text">
-                    Zammad Feedback <span class="text-muted">&lt;feedback@zammad.org&gt;</span>
+                    Helpdesk Feedback <span class="text-muted">&lt;notifications@colcampus.com&gt;</span>
                   </div>
                 </div>
               </div>
@@ -89,7 +89,7 @@
                     </div>
 
                     <div>
-                      Thank you for installing Zammad.
+                      Thank you for installing Zionsoftwares Helpdesk.
                     </div>
 
                     <div>
@@ -97,7 +97,7 @@
                     </div>
 
                     <div>
-                      You will find updates and patches at <a href="https://zammad.org/" target="_blank" title="https://zammad.org/">https://zammad.org/</a>. Online
+                      You will find updates and patches at <a href="http://zionsoftwares.com/" target="_blank" title="https://zionsoftwares.com/">http://zionsoftwares.com/</a>. <!-- Online
                     </div>
 
                     <div>
@@ -106,6 +106,7 @@
 
                     <div>
                       get involved (discussions, contributing, ...) at <a href="https://zammad.org/participate" target="_blank" title="https://zammad.org/participate">https://zammad.org/participate</a>.
+                    -->
                     </div>
 
                     <div>
@@ -121,7 +122,7 @@
                     </div>
 
                     <div>
-                      The <a href="https://zammad.org" target="_blank" title="https://zammad.org">zammad.org</a> Project
+                      The <a href="http://zionsoftwares.com" target="_blank" title="http://zionsoftwares.com">zionsoftwares.com</a> Project
                     </div>
 
                     <div class="textBubble-overflowContainer hide">
@@ -798,11 +799,11 @@
         <div class="sidebar-block">
           <span class="avatar avatar--unique userInfo-avatar size-50 user-popover" data-id="2" style="background-position: -92.79607555375712px -106.24902447601627px;">NB</span>
 
-          <h3 title="Name">Nicole Braun</h3>
+          <h3 title="Name">Samuel Santhosh</h3>
         </div>
 
         <div class="sidebar-block">
-          <label>Email</label> nicole.braun@zammad.org
+          <label>Email</label> samuel@zionsoftwares.com
         </div>
 
         <div class="sidebar-block">
@@ -843,7 +844,7 @@
             <a href="#organization/profile/1"></a>
           </div>
 
-          <h3 title="Name">Zammad Foundation</h3>
+          <h3 title="Name">Zionsoftwares</h3>
         </div>
 
         <div class="sidebar-block">

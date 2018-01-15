@@ -2,7 +2,7 @@
 require 'test_helper'
 
 class HistoryTest < ActiveSupport::TestCase
-  current_user = User.lookup(email: 'nicole.braun@zammad.org')
+  current_user = User.lookup(email: 'samuel@zionsoftwares.com')
 
   test 'ticket' do
     tests = [

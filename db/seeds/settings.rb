@@ -34,7 +34,7 @@ Setting.create_if_not_exists(
   title: 'Maintenance Mode',
   name: 'maintenance_mode',
   area: 'Core::WebApp',
-  description: 'Enable or disable the maintenance mode of Zammad. If enabled, all non-administrators get logged out and only administrators can start a new session.',
+  description: 'Enable or disable the maintenance mode of Zionsoftwares Helpdesk. If enabled, all non-administrators get logged out and only administrators can start a new session.',
   options: {},
   state: false,
   preferences: {
@@ -107,7 +107,7 @@ Setting.create_if_not_exists(
     placeholder: true,
     permission: ['admin.branding'],
   },
-  state: 'Zammad Helpdesk',
+  state: 'Zionsoftwares Helpdesk',
   frontend: true
 )
 Setting.create_if_not_exists(
@@ -130,7 +130,7 @@ Setting.create_if_not_exists(
     controller: 'SettingsAreaLogo',
     permission: ['admin.branding'],
   },
-  state: 'logo.svg',
+  state: '',
   frontend: true
 )
 Setting.create_if_not_exists(
@@ -212,7 +212,7 @@ Setting.create_if_not_exists(
   title: 'SystemID',
   name: 'system_id',
   area: 'System::Base',
-  description: 'Defines the system identifier. Every ticket number contains this ID. This ensures that only tickets which belong to your system will be processed as follow-ups (useful when communicating between two instances of Zammad).',
+  description: 'Defines the system identifier. Every ticket number contains this ID. This ensures that only tickets which belong to your system will be processed as follow-ups (useful when communicating between two instances of Zionsoftwares Helpdesk).',
   options: {
     form: [
       {
@@ -248,7 +248,7 @@ Setting.create_if_not_exists(
       },
     ],
   },
-  state: 'zammad.example.com',
+  state: 'zionsoftwares.com',
   preferences: {
     online_service_disable: true,
     placeholder: true,
@@ -346,7 +346,7 @@ Setting.create_if_not_exists(
         tag: 'select',
         options: {
           '' => '-',
-          'Service::Image::Zammad' => 'Zammad Image Service',
+          'Service::Image::Zammad' => 'Zionsoftwares Helpdesk Image Service',
         },
       },
     ],
@@ -373,7 +373,7 @@ Setting.create_if_not_exists(
         tag: 'select',
         options: {
           '' => '-',
-          'Service::GeoIp::Zammad' => 'Zammad GeoIP Service',
+          'Service::GeoIp::Zammad' => 'Zionsoftwares Helpdesk GeoIP Service',
         },
       },
     ],
@@ -427,7 +427,7 @@ Setting.create_if_not_exists(
         tag: 'select',
         options: {
           '' => '-',
-          'Service::GeoCalendar::Zammad' => 'Zammad GeoCalendar Service',
+          'Service::GeoCalendar::Zammad' => 'Zionsoftwares Helpdesk GeoCalendar Service',
         },
       },
     ],
@@ -2069,7 +2069,7 @@ Setting.create_if_not_exists(
 )
 
 Setting.create_if_not_exists(
-  title: 'Notification Sender',
+  title: 'Helpdesk Notification',
   name: 'notification_sender',
   area: 'Email::Base',
   description: 'Defines the sender of email notifications.',
@@ -2083,7 +2083,7 @@ Setting.create_if_not_exists(
       },
     ],
   },
-  state: 'Notification Master <noreply@#{config.fqdn}>', # rubocop:disable Lint/InterpolationCheck
+  state: 'Helpdesk Notification <notifications@colcampus.com>', # rubocop:disable Lint/InterpolationCheck
   preferences: {
     online_service_disable: true,
     permission: ['admin.channel_email'],
@@ -2327,7 +2327,7 @@ Setting.create_if_not_exists(
   title: 'Import Mode',
   name: 'import_mode',
   area: 'Import::Base',
-  description: 'Puts Zammad into import mode (disables some triggers).',
+  description: 'Puts Zionsoftwares Helpdesk into import mode (disables some triggers).',
   options: {
     form: [
       {
@@ -2650,7 +2650,7 @@ Setting.create_if_not_exists(
   title: 'Defines postmaster filter.',
   name: '0012_postmaster_filter_sender_is_system_address',
   area: 'Postmaster::PreFilter',
-  description: 'Defines postmaster filter to check if email has been created by Zammad itself and will set the article sender.',
+  description: 'Defines postmaster filter to check if email has been created by Zionsoftwares Helpdesk itself and will set the article sender.',
   options: {},
   state: 'Channel::Filter::SenderIsSystemAddress',
   frontend: false
@@ -2677,7 +2677,7 @@ Setting.create_if_not_exists(
   title: 'Defines postmaster filter.',
   name: '0020_postmaster_filter_auto_response_check',
   area: 'Postmaster::PreFilter',
-  description: 'Defines postmaster filter to identify auto responses to prevent auto replies from Zammad.',
+  description: 'Defines postmaster filter to identify auto responses to prevent auto replies from Zionsoftwares Helpdesk.',
   options: {},
   state: 'Channel::Filter::AutoResponseCheck',
   frontend: false

@@ -191,7 +191,7 @@ class FixedTranslation < ActiveRecord::Migration[4.2]
       {
         'name'        => 'import_mode',
         'title'       => nil,
-        'description' => 'Puts Zammad into import mode (disables some triggers).',
+        'description' => 'Puts Zionsoftwares Helpdesk into import mode (disables some triggers).',
       },
       {
         'name'        => 'import_backend',
@@ -256,7 +256,7 @@ class FixedTranslation < ActiveRecord::Migration[4.2]
       {
         'name'        => '0012_postmaster_filter_sender_is_system_address',
         'title'       => 'Defines postmaster filter.',
-        'description' => 'Defines postmaster filter to check if email has been created by Zammad itself and will set the article sender.',
+        'description' => 'Defines postmaster filter to check if email has been created by Zionsoftwares Helpdesk itself and will set the article sender.',
       },
       {
         'name'        => '0015_postmaster_filter_identify_sender',
@@ -266,7 +266,7 @@ class FixedTranslation < ActiveRecord::Migration[4.2]
       {
         'name'        => '0020_postmaster_filter_auto_response_check',
         'title'       => 'Defines postmaster filter.',
-        'description' => 'Defines postmaster filter to identify auto responses to prevent auto replies from Zammad.',
+        'description' => 'Defines postmaster filter to identify auto responses to prevent auto replies from Zionsoftwares Helpdesk.',
       },
       {
         'name'        => '0030_postmaster_filter_out_of_office_check',

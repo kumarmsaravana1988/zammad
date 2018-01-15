@@ -11,7 +11,7 @@ class App.Twitter extends App.Model
   ]
 
   @description = '''
-**Twitter Accounts**, abgekürzt **SLAs**, unterstützen Sie gegenüber Kunden gewisse zeitliche Reaktionen einzuhalten. Somit können Sie z. B. sagen Kunden sollen immer nach spätestens 8 Stunden eine Reaktion von Ihnen bekommen. Falls es zu einer drohenden Unterschreitung oder einer Unterschreitung kommt, weißt Zammad Sie auf solche Ereignisse hin.
+**Twitter Accounts**, abgekürzt **SLAs**, unterstützen Sie gegenüber Kunden gewisse zeitliche Reaktionen einzuhalten. Somit können Sie z. B. sagen Kunden sollen immer nach spätestens 8 Stunden eine Reaktion von Ihnen bekommen. Falls es zu einer drohenden Unterschreitung oder einer Unterschreitung kommt, weißt Zionsoftwares Helpdesk Sie auf solche Ereignisse hin.
 
 Es können **Reaktionszeit** (Zeit zwischen Erstellung eines Tickets und erster Reaktion eines Agenten), **Aktualisierungszeit** (Zeit zwischen Nachfrage eines Kunden und Reaktion eines Agenten) und **Lösungszeit** (Zeit zwischen Erstellung und schließen eines Tickets) definiert werden.
 
