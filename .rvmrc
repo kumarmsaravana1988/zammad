@@ -4,4 +4,3 @@ if [ -e '.rvmrc_custom' ]; then
 else
   rvm --create use ruby-2.4.2@greatlearning;
 fi
-
