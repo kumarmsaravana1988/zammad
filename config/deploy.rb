@@ -13,12 +13,12 @@ set :keep_releases, 5
 set :rails_env, "production"
 set :deploy_via, :copy
 # Define where to put your application code
-set :deploy_to, "/var/deploy/capistrano/zionsoftwares_helpdesk/"
+set :deploy_to, "/var/deploy/capistrano/helpdesk/"
 
 set :linked_files, %w{config/database.yml config/application.yml}
 set :linked_dirs, %w{public/system}
 
-
+set :bundle_flags, "--path vendor/bundle --without=sqlite --binstubs"
 set :pty, true
 
 set :format, :pretty

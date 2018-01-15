@@ -16,7 +16,7 @@ gem 'unicorn', group: :unicorn
 
 # core - supported ORMs
 gem 'activerecord-nulldb-adapter', group: :nulldb
-gem 'mysql2', group: :mysql
+#gem 'mysql2', group: :mysql
 gem 'pg', group: :postgres
 
 # core - asynchrous task execution
