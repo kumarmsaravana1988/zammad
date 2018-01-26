@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # core - base
-ruby '2.4.2'
+ruby '2.4.3'
 gem 'rails', '5.1.4'
 
 # core - rails additions
