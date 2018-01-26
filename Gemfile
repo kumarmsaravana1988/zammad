@@ -161,7 +161,7 @@ group :development, :test do
     gem 'capistrano-bundler'
     gem 'capistrano-rails'
     gem 'capistrano-passenger'
-    gem 'capistrano3-delayed-job'
+    gem 'capistrano3-delayed-job', '~> 1.0'
   end
 
 end
